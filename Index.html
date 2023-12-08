@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Tree</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .family-tree {
+      display: flex;
+      justify-content: center;
+    }
+
+    .person {
+      text-align: center;
+      margin: 10px;
+    }
+
+    .person img {
+      width: 100px; /* Adjust the size as needed */
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .generation {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    /* Style for the dropdown container */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Style for the dropdown button */
+    .dropdown-btn {
+      background-color: #3498db;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Style for the dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    /* Style for the dropdown links */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Change color on hover */
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<div class="family-tree">
+  <div class="person">
+    <img src="images/parent.jpg" alt="VIKRAMSA">
+    <img src="images/parent.jpg" alt="SARALABAI">
+    <h2>VIKRAMSA + SARALABAI</h2>
+    <h2>GIRNAR</h2>
+
+    <div class="generation">
+      <!-- Other Children ... -->
+        
+      <div class="person">
+   <img src="images/child4.jpg" alt="Child 4">
+    
+
+      <!-- Kisansa + Kamalbai/Sushilabai with Dropdown --> 
+        <div class="dropdown">
+          <button class="dropdown-btn" onclick="toggleDropdown('Kisansa + Kamalbai/Sushilabai')">Kisansa + Kamalbai/Sushilabai</button>
+          <div class="dropdown-content" id="Kisansa + Kamalbai/Sushilabai">
+            <!-- Additional Details Here -->
+ <img src="images/child4.jpg" alt="Child 4">
+            <p>Nisha + Ramamsa.</p>
+          </div>
+        </div>
+      </div>
+
+<div class="person">
+   <img src="images/child4.jpg" alt="Child 4">
+    
+
+      <!-- Adv Madhukrsa + Vidyabai with Dropdown --> 
+        <div class="dropdown">
+          <button class="dropdown-btn" onclick="toggleDropdown('Adv Madhukrsa + Vidyabai')">Adv Madhukrsa + Vidyabai</button>
+          <div class="dropdown-content" id="Adv Madhukrsa + Vidyabai">
+            <!-- Additional Details Here -->
+ <img src="images/child4.jpg" alt="Child 4">
+            <p>Nisha + Ramamsa.</p>
+          </div>
+        </div>
+      </div>
+<div class="person">
+   <img src="images/child4.jpg" alt="Child 4">
+    
+
+      <!-- Sindhubai + Mohansa with Dropdown --> 
+        <div class="dropdown">
+          <button class="dropdown-btn" onclick="toggleDropdown('Sindhubai + Mohansa ')">Sindhubai + Mohansa </button>
+          <div class="dropdown-content" id="Sindhubai + Mohansa ">
+            <!-- Additional Details Here -->
+ <img src="images/child4.jpg" alt="Child 4">
+            <p>Nisha + Ramamsa.</p>
+          </div>
+        </div>
+      </div>
+<div class="person">
+   <img src="images/child4.jpg" alt="Child 4">
+    
+
+      <!-- Pushpabai + Shivramsa with Dropdown --> 
+        <div class="dropdown">
+          <button class="dropdown-btn" onclick="toggleDropdown('pushpabaiShivramsa')">Pushpabai + Shivramsa</button>
+          <div class="dropdown-content" id="pushpabaiShivramsa">
+            <!-- Additional Details Here -->
+ <img src="images/child4.jpg" alt="Child 4">
+            <p>Nisha + Ramamsa.</p>
+          </div>
+        </div>
+      </div>
+<div class="person">
+   <img src="images/child5.jpg" alt="Child 5">
+    
+
+      <!-- Indubai + Vishwnathsa with Dropdown --> 
+        <div class="dropdown">
+          <button class="dropdown-btn" onclick="toggleDropdown('Indubai + Vishwnathsa')">Indubai + Vishwnathsa</button>
+          <div class="dropdown-content" id="Indubai + Vishwnathsa">
+            <!-- Additional Details Here -->
+ <img src="images/child4.jpg" alt="Child 4">
+            <p>Nisha + Ramamsa.</p>
+          </div>
+        </div>
+      </div>
+<div class="person">
+   <img src="images/child6.jpg" alt="Child 6">
+    
+
+      <!-- Arunsa + Kalpanabai with Dropdown --> 
+        <div class="dropdown">
+          <button class="dropdown-btn" onclick="toggleDropdown('Arunsa + Kalpanabai')">Arunsa + Kalpanabai</button>
+          <div class="dropdown-content" id="Arunsa + Kalpanabai">
+            <!-- Additional Details Here -->
+ <img src="images/child4.jpg" alt="Child 4">
+            <p>Nisha + Ramamsa.</p>
+          </div>
+        </div>
+      </div>
+<div class="person">
+   <img src="images/child7.jpg" alt="Child 7">
+    
+
+      <!-- Chandrakantsa + Aashabai with Dropdown --> 
+        <div class="dropdown">
+          <button class="dropdown-btn" onclick="toggleDropdown('Chandrakantsa + Aashabai')">Chandrakantsa + Aashabai</button>
+          <div class="dropdown-content" id="Chandrakantsa + Aashabai">
+            <!-- Additional Details Here -->
+ <img src="images/child4.jpg" alt="Child 4">
+            <p>Nisha + Ramamsa.</p>
+          </div>
+        </div>
+      </div>
+<div class="person">
+   <img src="images/child8.jpg" alt="Child 8">
+    
+
+      <!-- Dr.Lakshmikantasa + Rekhabai with Dropdown --> 
+        <div class="dropdown">
+          <button class="dropdown-btn" onclick="toggleDropdown('Dr.Lakshmikantasa + Rekhabai')">Dr.Lakshmikantasa + Rekhabai</button>
+          <div class="dropdown-content" id="Dr.Lakshmikantasa + Rekhabai">
+            <!-- Additional Details Here -->
+ <img src="images/child4.jpg" alt="Child 4">
+            <p>Nisha + Ramamsa.</p>
+          </div>
+      </div>
+
+
+
+
+      <!-- Other Children ... -->
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleDropdown(id) {
+    var dropdownContent = document.getElementById(id);
+    if (dropdownContent.style.display === "none") {
+      dropdownContent.style.display = "block";
+    } else {
+      dropdownContent.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
+
+
